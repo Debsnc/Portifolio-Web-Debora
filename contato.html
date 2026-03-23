@@ -8,8 +8,11 @@
 
 <body>
 
+<!-- Cabeçalho -->
 <header>
   <h1>Débora Carvalho</h1>
+
+  <!-- Menu -->
   <nav>
     <a href="index.html">Início</a>
     <a href="formacao.html">Formação</a>
@@ -18,17 +21,38 @@
   </nav>
 </header>
 
+<!-- Conteúdo principal -->
 <main>
   <h2>Contato</h2>
 
+  <!-- Informações de contato -->
   <p>Email: debsncarvalho@gmail.com</p>
   <p>Telefone: (15) 99171-6087</p>
 
 </main>
+<form id="formContato">
 
+  <!-- Campo nome -->
+  <label>Nome:</label><br>
+  <input type="text" id="nome"><br><br>
+
+  <!-- Campo email -->
+  <label>Email:</label><br>
+  <input type="text" id="email"><br><br>
+
+  <!-- Campo mensagem -->
+  <label>Mensagem:</label><br>
+  <textarea id="mensagem"></textarea><br><br>
+
+  <!-- Botão -->
+  <button type="submit">Enviar</button>
+
+</form>
+<!-- Rodapé -->
 <footer>
   <p>© 2026 - Débora Carvalho</p>
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
