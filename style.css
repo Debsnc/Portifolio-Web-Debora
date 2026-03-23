@@ -1,26 +1,47 @@
+/* Estilo geral da página */
 body {
+  font-family: Arial, sans-serif; /* fonte do site */
+  margin: 0; /* remove margem padrão */
+  background-color: #f2f2f2; /* cor de fundo */
+
+  /* Fundo da página com imagem tech */
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f2f2f2;
+
+  /* imagem + camada branca transparente por cima */
+  background: 
+  linear-gradient(rgba(255,255,255,0.9), rgba(172, 93, 173, 0.9)),
+  url("fundo.jpeg");
+
+  background-size: cover; /* cobre a tela toda */
+  background-position: center; /* centraliza imagem */
+  background-attachment: fixed; /* efeito elegante ao rolar */
+
+  display: flex;
+  flex-direction: column;
 }
 
+/* Cabeçalho */
 header {
-  background-color: #333;
-  color: white;
-  padding: 15px;
-  text-align: center;
+  background-color: #333; /* fundo escuro */
+  color: white; /* texto branco */
+  padding: 15px; /* espaço interno */
+  text-align: center; /* centraliza conteúdo */
 }
 
+/* Links do menu */
 nav a {
   color: white;
   margin: 10px;
-  text-decoration: none;
+  text-decoration: none; /* tira sublinhado */
 }
 
+/* Conteúdo principal */
 main {
   padding: 20px;
 }
 
+/* Rodapé */
 footer {
   background-color: #333;
   color: white;
@@ -28,8 +49,60 @@ footer {
   padding: 10px;
 }
 
+/* SOBRE MIM (FOTO + TEXTO) */
+.sobre {
+  display: flex; /* coloca lado a lado */
+  align-items: flex-start; /* alinha pelo topo */
+  gap: 20px; /* espaço entre elementos */
+}
+
+/* Foto */
 .foto {
-  width: 150px;
-  display: block;
-  margin: 20px auto;
+  width: 150px; /* tamanho controlado */
+  height: 150px;
+  object-fit: cover; /* evita distorção */
+  border-radius: 10px; /* borda arredondada */
+}
+
+/* Texto */
+.texto {
+  max-width: 500px;
+}
+
+/* CARDS (PORTFÓLIO E HOBBIES)*/
+.card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px; /* cantos arredondados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra leve */
+}
+
+/* RESPONSIVO (CELULAR) */
+@media (max-width: 600px) {
+  .sobre {
+    flex-direction: column; /* muda para coluna */
+    align-items: center;
+    text-align: center;
+  }
+
+  .foto {
+    width: 120px;
+    height: 120px;
+  }
+}
+/* Faz a página ocupar a altura inteira da tela */
+html, body {
+  height: 100%;
+}
+
+/* Organiza a página em coluna */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Faz o conteúdo principal ocupar o espaço disponível */
+main {
+  flex: 1;
 }
