@@ -11,7 +11,7 @@ body {
   /* imagem + camada branca transparente por cima */
   background: 
   linear-gradient(rgba(255,255,255,0.9), rgba(172, 93, 173, 0.9)),
-  url("fundo.jpeg");
+  url("img/fundo.jpeg");
 
   background-size: cover; /* cobre a tela toda */
   background-position: center; /* centraliza imagem */
